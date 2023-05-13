@@ -1,0 +1,83 @@
+:root {
+    --clr-primary-100: hsl(0, 0%, 100%);
+    --clr-primary-200: hsl(212, 45%, 89%);
+    --clr-secondary-900:hsl(218, 44%, 22%);
+    --clr-secondary-200: hsl(220, 15%, 55%) ;
+   
+
+    --ff-primary: 'Outfit', sans-serif;
+
+    --fw-bold: 700;
+    --fw-regular: 400;
+
+    --fs-400: 1rem;
+    --fs-700: 1.5rem;
+}
+ 
+/* general settings */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    font:inherit
+}
+
+html,
+body {
+    height:100%
+}
+
+img,
+svg,
+picture {
+    max-width: 100%;
+    display:block;
+}
+
+
+/* by components */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-primary-200);
+    color: var(--clr-secondary-200);
+}
+
+.conteiner {
+    width: 345px;
+    background-color: var(--clr-primary-100);
+    padding:1rem 1rem 2.9rem 1rem;
+    border-radius: 20px;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+h1,p {
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+}
+
+.heading {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    color: var(--clr-secondary-900);
+}
+
+/* @media (max-width:400px) {
+    .conteiner {
+        width: 342px;
+        transition: width 0.5s ease;
+       
+    }
+} */
